@@ -34,7 +34,7 @@ public class LoginSteps {
     @When("User Checks Broken Images")
     public void userChecksBrokenImages() throws IOException {
         List<WebElement> ImgLinks = driver.findElements(By.tagName("img"));
-        System.out.println("Total Image Count : " + ImgLinks.size());
+        System.out.println("Total Images Count : " + ImgLinks.size());
         int count = 0;
         for (WebElement link : ImgLinks) {
             String Imgurl = link.getAttribute("src");

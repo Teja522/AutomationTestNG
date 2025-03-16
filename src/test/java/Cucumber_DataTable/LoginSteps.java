@@ -57,13 +57,4 @@ public class LoginSteps {
     }
 
 
-    @Given("User is on the other login page")
-    public void userIsOnTheOtherLoginPage() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver1 = new ChromeDriver();
-        driver1.manage().window().maximize();
-        // Assert.fail();
-        driver1.get("https://www.youtube.com/");
-        driver.quit();
-    }
 }

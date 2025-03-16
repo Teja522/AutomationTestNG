@@ -11,7 +11,7 @@ public class Test1 {
         System.out.println("Demo Test Successfull");
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.get("https://www.google.com");
         System.out.println("Title: " + driver.getTitle());
     }
